@@ -19,7 +19,7 @@ class WidgetDecider {
     const int gridCrossAxisCount = 4;
     const double gridSpacing = 16;
     const double listSpacing = 10;
-    final double gridItemWidth = (screenWidth - gridSpacing * 4 - 24) / 4;
+    final double gridItemWidth = (screenWidth - gridSpacing * 4 - 32) / 4;
     final double gridItemHeight = gridItemWidth + 40;
     final double listItemHeight = 100;
     const Duration animationDuration = Duration(milliseconds: 150);
