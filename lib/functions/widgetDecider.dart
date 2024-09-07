@@ -19,9 +19,9 @@ class WidgetDecider {
     const int gridCrossAxisCount = 4;
     const double gridSpacing = 16;
     const double listSpacing = 10;
-    const double gridItemWidth = 80;
-    const double gridItemHeight = 120;
-    const double listItemHeight = 100;
+    final double gridItemWidth = (screenWidth - gridSpacing * 4 - 24) / 4;
+    final double gridItemHeight = gridItemWidth + 40;
+    final double listItemHeight = 100;
     const Duration animationDuration = Duration(milliseconds: 150);
     Methods func = Methods();
     List<Widget> children = [];
@@ -69,6 +69,7 @@ class WidgetDecider {
                     child: CategoriesGridItem(
                       item: section.items[index],
                       duration: const Duration(milliseconds: 100),
+                      size: gridItemWidth,
                     ),
                   ),
                 );

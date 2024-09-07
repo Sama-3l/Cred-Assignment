@@ -6,10 +6,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CategoriesGridItem extends StatefulWidget {
-  const CategoriesGridItem({super.key, required this.item, required this.duration});
+  const CategoriesGridItem({super.key, required this.item, required this.duration, required this.size});
 
   final Item item;
   final Duration duration;
+  final double size;
 
   @override
   State<CategoriesGridItem> createState() => _CategoriesGridItemState();
