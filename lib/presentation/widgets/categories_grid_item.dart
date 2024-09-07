@@ -30,8 +30,8 @@ class _CategoriesGridItemState extends State<CategoriesGridItem> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Container(
-                width: 80,
-                height: 80,
+                width: widget.size,
+                height: widget.size,
                 decoration: BoxDecoration(border: Border.all(color: const Color.fromARGB(255, 73, 73, 73), width: 0.05)),
                 child: Center(
                   child: SvgPicture.string(
