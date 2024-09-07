@@ -37,6 +37,8 @@ class _CategoriesGridItemState extends State<CategoriesGridItem> {
                   child: SvgPicture.string(
                     widget.item.icon,
                     fit: BoxFit.fitWidth,
+                    width: widget.size * 0.5,
+                    height: widget.size * 0.5,
                   ),
                 ),
               ),
